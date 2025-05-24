@@ -1,0 +1,639 @@
+{
+  "generated_at": "2025-05-23T03:02:47.500197",
+  "system_info": {
+    "name": "Oslo Planning System",
+    "version": "1.0",
+    "oslo_focused": true,
+    "data_sources": [
+      "oslo_origo",
+      "geonorge_oslo",
+      "oslo_pdfs"
+    ]
+  },
+  "oslo_data": {
+    "origo_datasets": [
+      {
+        "source": "oslo_origo",
+        "dataset_id": "oslo-reguleringsplaner",
+        "title": "Reguleringsplaner Oslo kommune",
+        "description": "Alle reguleringsplaner i Oslo kommune",
+        "category": "plandata",
+        "format": "JSON/GeoJSON",
+        "update_frequency": "daily",
+        "oslo_specific": true
+      },
+      {
+        "source": "oslo_origo",
+        "dataset_id": "oslo-byggetillatelser",
+        "title": "Byggetillatelser Oslo",
+        "description": "Byggetillatelser behandlet av PBE",
+        "category": "byggesak",
+        "format": "JSON",
+        "update_frequency": "daily",
+        "oslo_specific": true
+      },
+      {
+        "source": "oslo_origo",
+        "dataset_id": "oslo-eiendomsdata",
+        "title": "Eiendomsdata Oslo",
+        "description": "Eiendomsinformasjon og matrikkeldata",
+        "category": "eiendom",
+        "format": "JSON",
+        "update_frequency": "weekly",
+        "oslo_specific": true
+      },
+      {
+        "source": "oslo_origo",
+        "dataset_id": "oslo-infrastruktur",
+        "title": "Infrastrukturdata Oslo",
+        "description": "VA-nett, strøm, vei og kollektivtransport",
+        "category": "infrastruktur",
+        "format": "GeoJSON",
+        "update_frequency": "monthly",
+        "oslo_specific": true
+      },
+      {
+        "source": "oslo_origo",
+        "dataset_id": "oslo-bydelsfakta",
+        "title": "Bydelsfakta Oslo",
+        "description": "Demografiske data for Oslos 15 bydeler",
+        "category": "demografi",
+        "format": "JSON",
+        "update_frequency": "yearly",
+        "oslo_specific": true
+      }
+    ],
+    "reguleringsplaner": [
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "c65b054b-e726-497e-810f-1a98b6f29681",
+        "title": "HC-plasser i Oslo",
+        "organization": "Oslo kommune",
+        "description": "Punktlag som viser alle kommunale parkeringsplasser for forflytningshemmede i Oslo.",
+        "theme": "Annen",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "27bb8a9e-a5d0-47d5-8208-84dd22c1f8ee",
+        "title": "Ortofoto Oslo kommune 2020",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart for alle objekter lokalisert på bakkenivå og kan knyttes til et referansesystem. Bakkeoppløsning på ortofoto varierer og er oppgitt i metadataene. For prosjekter gjennomført før 2020, vil nøyaktigheten variere fra 0,5-2 m avhengig av bakkeoppløsning og benyttet terrengmodell. Fra 2020 er nøyaktigheten til produktet oppgitt i metadatainformasjonen.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "high",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "6485216c-d9e0-4824-ac97-0ed6ffe4453f",
+        "title": "Dreneringslinjer i Oslo og Viken",
+        "organization": "Kartverket",
+        "description": "Dreneringslinjer i Oslo og Viken er et datasett som viser modellerte dreneringslinjer. Datasettet viser hvor i terrenget det vil dannes nye dreneringslinjer. Det er ikke tatt hensyn til å stikkrenner og andre kritiske punkt i modelleringen. Datasettet inneholder dreneringslinjer hvor dreneringsarealet er større enn 10.000 m2.\nEksisterende FKB-Vann er brent ned i terrengmodellen før beregning, så FKB-Vann har en ekstra vekt ved beregning av disse dreneringslinjene.",
+        "theme": "Samfunnssikkerhet",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "70d03845-f258-4d21-a1d9-c1a2d78dae1a",
+        "title": "Ortofoto Oslo kommune 2019",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart og kan knyttes til et referansesystem. Ortofoto er inndelt i ulike ortofotostandarder egnet til forskjellige formål. Ortofoto 10: Dekker normalt byområder og utbyggingsområder der det er behov for god stedfestingsnøyaktighet og høy oppløsning. Bakkeoppløsningen er som regel 0,04 – 0,15 m. Nøyaktighet ± 0.35 m.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "high",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "7dd72e72-5bd5-4619-8308-9a602aba761b",
+        "title": "Ortofoto Oslo kommune 2017",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart og kan knyttes til et referansesystem. Ortofoto er inndelt i ulike ortofotostandarder egnet til forskjellige formål. Ortofoto 10: Dekker normalt byområder og utbyggingsområder der det er behov for god stedfestingsnøyaktighet og høy oppløsning. Bakkeoppløsningen er som regel 0,04 – 0,15 m. Nøyaktighet ± 0.35 m.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "high",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "18fb7a71-d268-41cb-972b-0e8c9c3dcfee",
+        "title": "Ortofoto Oslo kommune 2018",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart og kan knyttes til et referansesystem. Ortofoto er inndelt i ulike ortofotostandarder egnet til forskjellige formål. Ortofoto 10: Dekker normalt byområder og utbyggingsområder der det er behov for god stedfestingsnøyaktighet og høy oppløsning. Bakkeoppløsningen er som regel 0,04 – 0,15 m. Nøyaktighet ± 0.35 m.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "high",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "cd597c56-f4ca-4c0b-a123-32a700bb8bfb",
+        "title": "Ortofoto Oslo 2014",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart og kan knyttes til et referansesystem. Ortofoto er inndelt i ulike ortofotostandarder egnet til forskjellige formål. Ortofoto 10: Dekker normalt byområder og utbyggingsområder der det er behov for god stedfestingsnøyaktighet og høy oppløsning. Bakkeoppløsningen er som regel 0,04 – 0,15 m. Nøyaktighet ± 0.35 m.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "306caa89-42a8-48db-aa77-d28460735aa9",
+        "title": "Ortofoto Oslo 2015",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart og kan knyttes til et referansesystem. Ortofoto er inndelt i ulike ortofotostandarder egnet til forskjellige formål. Ortofoto 10: Dekker normalt byområder og utbyggingsområder der det er behov for god stedfestingsnøyaktighet og høy oppløsning. Bakkeoppløsningen er som regel 0,04 – 0,15 m. Nøyaktighet ± 0.35 m.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "ad56e155-2248-491a-9778-492783e3c0f9",
+        "title": "Ortofoto Oslo 2016",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart og kan knyttes til et referansesystem. Ortofoto er inndelt i ulike ortofotostandarder egnet til forskjellige formål. Ortofoto 10: Dekker normalt byområder og utbyggingsområder der det er behov for god stedfestingsnøyaktighet og høy oppløsning. Bakkeoppløsningen er som regel 0,04 – 0,15 m. Nøyaktighet ± 0.35 m.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "136d6274-f508-4ac9-b3ea-9151968d055b",
+        "title": "Ortofoto Oslo vår 2021",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart for alle objekter lokalisert på bakkenivå og kan knyttes til et referansesystem. Bakkeoppløsning på ortofoto varierer og er oppgitt i metadataene. For prosjekter gjennomført før 2020, vil nøyaktigheten variere fra 0,5-2 m avhengig av bakkeoppløsning og benyttet terrengmodell. Fra 2020 er nøyaktigheten til produktet oppgitt i metadatainformasjonen.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "94f03b94-226e-456c-8517-315ee2b4ef28",
+        "title": "Ortofoto Oslo byggesone 2022",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart for alle objekter lokalisert på bakkenivå og kan knyttes til et referansesystem. Bakkeoppløsning på ortofoto varierer og er oppgitt i metadataene. For prosjekter gjennomført før 2020, vil nøyaktigheten variere fra 0,5-2 m avhengig av bakkeoppløsning og benyttet terrengmodell. Fra 2020 er nøyaktigheten til produktet oppgitt i metadatainformasjonen.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "baeecc18-4424-4464-b060-ab6a3959ce4d",
+        "title": "Ortofoto Oslo-Østlandet 2022",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart for alle objekter lokalisert på bakkenivå og kan knyttes til et referansesystem. Bakkeoppløsning på ortofoto varierer og er oppgitt i metadataene. For prosjekter gjennomført før 2020, vil nøyaktigheten variere fra 0,5-2 m avhengig av bakkeoppløsning og benyttet terrengmodell. Fra 2020 er nøyaktigheten til produktet oppgitt i metadatainformasjonen.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "8f5f7b02-64ab-49e3-ad0b-482677b15457",
+        "title": "Ortofoto Oslo vår 2023",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart for alle objekter lokalisert på bakkenivå og kan knyttes til et referansesystem. Bakkeoppløsning på ortofoto varierer og er oppgitt i metadataene. For prosjekter gjennomført før 2020, vil nøyaktigheten variere fra 0,5-2 m avhengig av bakkeoppløsning og benyttet terrengmodell. Fra 2020 er nøyaktigheten til produktet oppgitt i metadatainformasjonen.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "974ba1ae-f78a-449f-a903-97d23f79b7a4",
+        "title": "Ortofoto Oslo vår 2024",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart for alle objekter lokalisert på bakkenivå og kan knyttes til et referansesystem. Bakkeoppløsning på ortofoto varierer og er oppgitt i metadataene. For prosjekter gjennomført før 2020, vil nøyaktigheten variere fra 0,5-2 m avhengig av bakkeoppløsning og benyttet terrengmodell. Fra 2020 er nøyaktigheten til produktet oppgitt i metadatainformasjonen.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "67b568fa-cc22-4408-9d41-0502866f5310",
+        "title": "Ortofoto Oslo 1997",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart for alle objekter lokalisert på bakkenivå og kan knyttes til et referansesystem. Bakkeoppløsning på ortofoto varierer og er oppgitt i metadataene. For prosjekter gjennomført før 2020, vil nøyaktigheten variere fra 0,5-2 m avhengig av bakkeoppløsning og benyttet terrengmodell. Fra 2020 er nøyaktigheten til produktet oppgitt i metadatainformasjonen.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "63db473e-c62b-443c-b4a7-bf93f3b9e5a8",
+        "title": "Ortofoto Oslo 1997",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart for alle objekter lokalisert på bakkenivå og kan knyttes til et referansesystem. Bakkeoppløsning på ortofoto varierer og er oppgitt i metadataene. For prosjekter gjennomført før 2020, vil nøyaktigheten variere fra 0,5-2 m avhengig av bakkeoppløsning og benyttet terrengmodell. Fra 2020 er nøyaktigheten til produktet oppgitt i metadatainformasjonen.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "46b9d1ab-eca9-42d0-9859-fac9c5608bed",
+        "title": "Ortofoto Oslo 1997",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart for alle objekter lokalisert på bakkenivå og kan knyttes til et referansesystem. Bakkeoppløsning på ortofoto varierer og er oppgitt i metadataene. For prosjekter gjennomført før 2020, vil nøyaktigheten variere fra 0,5-2 m avhengig av bakkeoppløsning og benyttet terrengmodell. Fra 2020 er nøyaktigheten til produktet oppgitt i metadatainformasjonen.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "e2223dfe-3c24-4c87-9eff-78cab5903572",
+        "title": "Ortofoto Oslo 1971",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart for alle objekter lokalisert på bakkenivå og kan knyttes til et referansesystem. Bakkeoppløsning på ortofoto varierer og er oppgitt i metadataene. For prosjekter gjennomført før 2020, vil nøyaktigheten variere fra 0,5-2 m avhengig av bakkeoppløsning og benyttet terrengmodell. Fra 2020 er nøyaktigheten til produktet oppgitt i metadatainformasjonen.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "13b774d4-d2ea-4516-93e0-9d776e57521b",
+        "title": "Ortofoto Oslo 1984",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart for alle objekter lokalisert på bakkenivå og kan knyttes til et referansesystem. Bakkeoppløsning på ortofoto varierer og er oppgitt i metadataene. For prosjekter gjennomført før 2020, vil nøyaktigheten variere fra 0,5-2 m avhengig av bakkeoppløsning og benyttet terrengmodell. Fra 2020 er nøyaktigheten til produktet oppgitt i metadatainformasjonen.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "0de3fbe3-f32d-4e8b-aa5c-6f233a245ff1",
+        "title": "Ortofoto Oslo 1947",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart for alle objekter lokalisert på bakkenivå og kan knyttes til et referansesystem. Bakkeoppløsning på ortofoto varierer og er oppgitt i metadataene. For prosjekter gjennomført før 2020, vil nøyaktigheten variere fra 0,5-2 m avhengig av bakkeoppløsning og benyttet terrengmodell. Fra 2020 er nøyaktigheten til produktet oppgitt i metadatainformasjonen.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "5c795e86-7af4-4baf-a579-0f27df73d3e9",
+        "title": "Ortofoto Oslo øst 2000",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart for alle objekter lokalisert på bakkenivå og kan knyttes til et referansesystem. Bakkeoppløsning på ortofoto varierer og er oppgitt i metadataene. For prosjekter gjennomført før 2020, vil nøyaktigheten variere fra 0,5-2 m avhengig av bakkeoppløsning og benyttet terrengmodell. Fra 2020 er nøyaktigheten til produktet oppgitt i metadatainformasjonen.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "9b2d1a7c-12e8-4b6c-a9d5-e64750338bb8",
+        "title": "Ortofoto Oslo vår 2013",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart og kan knyttes til et referansesystem. Ortofoto er inndelt i ulike ortofotostandarder egnet til forskjellige formål. Ortofoto 10: Dekker normalt byområder og utbyggingsområder der det er behov for god stedfestingsnøyaktighet og høy oppløsning. Bakkeoppløsningen er som regel 0,04 – 0,15 m. Nøyaktighet ± 0.35 m.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "d9934097-71b8-45a1-a79b-102367e769c5",
+        "title": "Ortofoto Oslo 1997",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart for alle objekter lokalisert på bakkenivå og kan knyttes til et referansesystem. Bakkeoppløsning på ortofoto varierer og er oppgitt i metadataene. For prosjekter gjennomført før 2020, vil nøyaktigheten variere fra 0,5-2 m avhengig av bakkeoppløsning og benyttet terrengmodell. Fra 2020 er nøyaktigheten til produktet oppgitt i metadatainformasjonen.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "d77edb73-c2cc-49a6-80f6-0fcbaf22e43e",
+        "title": "Ortofoto Oslo sør 1999",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart for alle objekter lokalisert på bakkenivå og kan knyttes til et referansesystem. Bakkeoppløsning på ortofoto varierer og er oppgitt i metadataene. For prosjekter gjennomført før 2020, vil nøyaktigheten variere fra 0,5-2 m avhengig av bakkeoppløsning og benyttet terrengmodell. Fra 2020 er nøyaktigheten til produktet oppgitt i metadatainformasjonen.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "f30ab5b2-4369-465a-81b2-0d507dd37aeb",
+        "title": "Ortofoto Oslo høst 2008",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart for alle objekter lokalisert på bakkenivå og kan knyttes til et referansesystem. Bakkeoppløsning på ortofoto varierer og er oppgitt i metadataene. For prosjekter gjennomført før 2020, vil nøyaktigheten variere fra 0,5-2 m avhengig av bakkeoppløsning og benyttet terrengmodell. Fra 2020 er nøyaktigheten til produktet oppgitt i metadatainformasjonen.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "1ff75648-ae58-4997-ba5e-40f8deea2c40",
+        "title": "Ortofoto Oslo lufthavn Gardermoen 2017",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart og kan knyttes til et referansesystem. Ortofoto er inndelt i ulike ortofotostandarder egnet til forskjellige formål. Ortofoto 10: Dekker normalt byområder og utbyggingsområder der det er behov for god stedfestingsnøyaktighet og høy oppløsning. Bakkeoppløsningen er som regel 0,04 – 0,15 m. Nøyaktighet ± 0.35 m.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "cdbb5edc-b49d-4b6b-85cf-d2f8b0e064d7",
+        "title": "Ortofoto Oslo lufthavn Gardermoen 2018",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart og kan knyttes til et referansesystem. Ortofoto er inndelt i ulike ortofotostandarder egnet til forskjellige formål. Ortofoto 10: Dekker normalt byområder og utbyggingsområder der det er behov for god stedfestingsnøyaktighet og høy oppløsning. Bakkeoppløsningen er som regel 0,04 – 0,15 m. Nøyaktighet ± 0.35 m.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "f364150d-4aed-4303-8f65-76399349ae9e",
+        "title": "Ortofoto Oslo lufthavn Gardermoen 2015",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart og kan knyttes til et referansesystem. Ortofoto er inndelt i ulike ortofotostandarder egnet til forskjellige formål. Ortofoto 10: Dekker normalt byområder og utbyggingsområder der det er behov for god stedfestingsnøyaktighet og høy oppløsning. Bakkeoppløsningen er som regel 0,04 - 0,15 m. Nøyaktighet ± 0.35 m.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "e9061df1-0fa2-4bcd-a254-853d5e9999e5",
+        "title": "Ortofoto Oslo lufthavn Gardermoen 2022",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart for alle objekter lokalisert på bakkenivå og kan knyttes til et referansesystem. Bakkeoppløsning på ortofoto varierer og er oppgitt i metadataene. For prosjekter gjennomført før 2020, vil nøyaktigheten variere fra 0,5-2 m avhengig av bakkeoppløsning og benyttet terrengmodell. Fra 2020 er nøyaktigheten til produktet oppgitt i metadatainformasjonen.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "24259520-dabf-4d75-8666-0a7c0de2a0d3",
+        "title": "Ortofoto Oslo sommer 2013",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart og kan knyttes til et referansesystem. Ortofoto er inndelt i ulike ortofotostandarder egnet til forskjellige formål. Ortofoto 10: Dekker normalt byområder og utbyggingsområder der det er behov for god stedfestingsnøyaktighet og høy oppløsning. Bakkeoppløsningen er som regel 0,04 – 0,15 m. Nøyaktighet ± 0.35 m.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "514924d1-2890-40f0-8281-27a31a6b8a3b",
+        "title": "Ortofoto Oslo lufthavn 2012",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart og kan knyttes til et referansesystem. Ortofoto er inndelt i ulike ortofotostandarder egnet til forskjellige formål. Ortofoto 10: Dekker normalt byområder og utbyggingsområder der det er behov for god stedfestingsnøyaktighet og høy oppløsning. Bakkeoppløsningen er som regel 0,04 – 0,15 m. Nøyaktighet ± 0.35 m.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "4f3a1626-abb9-4062-86ac-ee7ddf0e60ac",
+        "title": "Ortofoto Oslo - Follo - Romerike SV 1956",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart og kan knyttes til et referansesystem. Ortofoto er inndelt i ulike ortofotostandarder egnet til forskjellige formål. Ortofoto 20: Dekker områder som i hovedsak består av tett- og spredt bebyggelse og jordbruksområder. Bakkeoppløsning er vanligvis > 0,15 – 0,25 m. Nøyaktighet ± 0.50 m.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "97c45c65-4bf6-4bf9-bf60-b3cdc20be70b",
+        "title": "Ortofoto Oslo-Østlandet CIR 2022",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart og kan knyttes til et referansesystem. Ortofoto er inndelt i ulike ortofotostandarder egnet til forskjellige formål. Ortofoto «infrarødt» er opptak der en av fargekanalene er erstattet med opptak i det nærinfrarøde området, og bildene er spesielt egnet til vegetasjonskartlegging. Bakkeoppløsning varierer fra 0,1 m - 0,5 m. Nøyaktighet varierer fra ± 0,35 - 2 m.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "2f65ed15-aa1c-4f43-8342-aa13b7b03a6d",
+        "title": "Ortofoto Oslo 2011",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart og kan knyttes til et referansesystem. Ortofoto er inndelt i ulike ortofotostandarder egnet til forskjellige formål. Ortofoto 50: Omløpsfotografering som dekker hele landet. Bakkeoppløsning på disse varierer mellom 0,50, 0,40 eller 0,25 m. Fra 2012 gjelder bakkeoppløsning 0,25 m for ortofoto fra omløpsfotografering. Nøyaktighet ± 2 m for Ortofoto 50 (avhenger av kvaliteten på benyttet høydemodell)",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "f4f38086-a61a-49fb-a572-bc2f14373c37",
+        "title": "Ortofoto Oslo 2008",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart og kan knyttes til et referansesystem. Ortofoto er inndelt i ulike ortofotostandarder egnet til forskjellige formål. Ortofoto 50: Omløpsfotografering som dekker hele landet. Bakkeoppløsning på disse varierer mellom 0,50, 0,40 eller 0,25 m. Fra 2012 gjelder bakkeoppløsning 0,25 m for ortofoto fra omløpsfotografering. Nøyaktighet ± 2 m for Ortofoto 50 (avhenger av kvaliteten på benyttet høydemodell)",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "82a7a976-0dac-4457-9a8c-a6354a2ea762",
+        "title": "Ortofoto Oslo Rest 2012",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart og kan knyttes til et referansesystem. Ortofoto er inndelt i ulike ortofotostandarder egnet til forskjellige formål. Ortofoto 50: Omløpsfotografering som dekker hele landet. Bakkeoppløsning på disse varierer mellom 0,50, 0,40 eller 0,25 m. Fra 2012 gjelder bakkeoppløsning 0,25 m for ortofoto fra omløpsfotografering. Nøyaktighet ± 2 m for Ortofoto 50 (avhenger av kvaliteten på benyttet høydemodell)",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "a6464a74-d7ff-48bb-bb3d-56cbe3ea62fd",
+        "title": "Ortofoto Oslo-Østlandet 2016",
+        "organization": "Geovekst",
+        "description": "Ortofoto har samme geometriske egenskaper som et kart og kan knyttes til et referansesystem. Ortofoto er inndelt i ulike ortofotostandarder egnet til forskjellige formål. Ortofoto 50: Omløpsfotografering som dekker hele landet. Bakkeoppløsning på disse varierer mellom 0,50, 0,40 eller 0,25 m. Fra 2012 gjelder bakkeoppløsning 0,25 m for ortofoto fra omløpsfotografering. Nøyaktighet ± 2 m for Ortofoto 50 (avhenger av kvaliteten på benyttet høydemodell)",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "1c689aed-6ac7-407e-9431-ac7d0aedbd75",
+        "title": "Ortofoto Oslo skråfoto 2008",
+        "organization": "Geovekst",
+        "description": "Midlertidig ortofoto er en foreløpig leveranse av et ortofoto som benyttes under arbeidet med kontroll av kartkonstruksjon. Produktet er automatisk generert og har en lavere nøyaktighet en det endelige ortofotoet. Midlertidig ortofoto har samme geometriske egenskaper som et kart for alle objekter lokalisert på bakkenivå og kan knyttes til et referansesystem. Bakkeoppløsning på ortofoto varierer fra 0,04 m til 0,5 m. Tidligere ble midlertidig ortofoto kalt rektifiserte bilder.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "9874af2a-4918-46e6-b49c-552ec38aa19e",
+        "title": "Ortofoto Oslo skråfoto 2010",
+        "organization": "Geovekst",
+        "description": "Midlertidig ortofoto er en foreløpig leveranse av et ortofoto som benyttes under arbeidet med kontroll av kartkonstruksjon. Produktet er automatisk generert og har en lavere nøyaktighet en det endelige ortofotoet. Midlertidig ortofoto har samme geometriske egenskaper som et kart for alle objekter lokalisert på bakkenivå og kan knyttes til et referansesystem. Bakkeoppløsning på ortofoto varierer fra 0,04 m til 0,5 m. Tidligere ble midlertidig ortofoto kalt rektifiserte bilder.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "478a56d9-edd2-4c46-ba01-e1f8c72037fd",
+        "title": "Ortofoto Oslo skråfoto 2006",
+        "organization": "Geovekst",
+        "description": "Midlertidig ortofoto er en foreløpig leveranse av et ortofoto som benyttes under arbeidet med kontroll av kartkonstruksjon. Produktet er automatisk generert og har en lavere nøyaktighet en det endelige ortofotoet. Midlertidig ortofoto har samme geometriske egenskaper som et kart for alle objekter lokalisert på bakkenivå og kan knyttes til et referansesystem. Bakkeoppløsning på ortofoto varierer fra 0,04 m til 0,5 m. Tidligere ble midlertidig ortofoto kalt rektifiserte bilder.",
+        "theme": "Flyfoto",
+        "keywords": [],
+        "oslo_relevance": "low",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "4a5dad23-86e6-48a7-9223-da11b441e7aa",
+        "title": "Høydedata Oslo kommune Laserskanning 2017",
+        "organization": "Kartverket",
+        "description": "Høydedata gir en detaljert beskrivelse av terreng og overflate. Dataene er etablert som punktskyer fra flybåren laserskanning eller matching fra flybilder. Punktskyene har varierende tetthet (punkt/m2 ) tilpasset ulike formål. Fra punktskyene er det generert høydemodeller på grid-format av terreng (DTM) og overflate (DOM).",
+        "theme": "Høydedata",
+        "keywords": [],
+        "oslo_relevance": "high",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "564f0f9a-0cba-4ef8-b623-b52fb9fd4523",
+        "title": "Høydedata Oslo Kommuneskogen 2010",
+        "organization": "Kartverket",
+        "description": "Høydedata gir en detaljert beskrivelse av terreng og overflate. Dataene er etablert som punktskyer fra flybåren laserskanning eller matching fra flybilder. Punktskyene har varierende tetthet (punkt/m2 ) tilpasset ulike formål. Fra punktskyene er det generert høydemodeller på grid-format av terreng (DTM) og overflate (DOM).",
+        "theme": "Høydedata",
+        "keywords": [],
+        "oslo_relevance": "high",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "34200215-d597-403f-a0a2-225c6f52fcfe",
+        "title": "Høydedata Oslo Kommuneskogen 2010",
+        "organization": "Kartverket",
+        "description": "Høydedata gir en detaljert beskrivelse av terreng og overflate. Dataene er etablert som punktskyer fra flybåren laserskanning eller matching fra flybilder. Punktskyene har varierende tetthet (punkt/m2 ) tilpasset ulike formål. Fra punktskyene er det generert høydemodeller på grid-format av terreng (DTM) og overflate (DOM).",
+        "theme": "Høydedata",
+        "keywords": [],
+        "oslo_relevance": "high",
+        "download_links": []
+      },
+      {
+        "source": "geonorge_oslo",
+        "plan_id": "dfcf22c8-6484-4c9f-9cce-c1c9985f0461",
+        "title": "Høydedata Oslo kommune laserskanning 2019",
+        "organization": "Kartverket",
+        "description": "Høydedata gir en detaljert beskrivelse av terreng og overflate. Dataene er etablert som punktskyer fra flybåren laserskanning eller matching fra flybilder. Punktskyene har varierende tetthet (punkt/m2 ) tilpasset ulike formål. Fra punktskyene er det generert høydemodeller på grid-format av terreng (DTM) og overflate (DOM).",
+        "theme": "Høydedata",
+        "keywords": [],
+        "oslo_relevance": "high",
+        "download_links": []
+      }
+    ],
+    "byggesaker": [],
+    "eiendomsdata": [],
+    "infrastruktur": [],
+    "temaplaner": [],
+    "pdf_documents": [],
+    "processing_log": [
+      {
+        "timestamp": "2025-05-23T03:02:46.804575",
+        "operation": "origo_setup",
+        "oslo_context": true,
+        "details": {
+          "status": "sdk_configured",
+          "environment": "dev",
+          "summary": "Origo SDK configured for Oslo"
+        }
+      },
+      {
+        "timestamp": "2025-05-23T03:02:46.804665",
+        "operation": "origo_dataset_search",
+        "oslo_context": true,
+        "details": {
+          "method": "sample_data",
+          "datasets_found": 5,
+          "summary": "Using sample Oslo datasets until authentication is set up"
+        }
+      },
+      {
+        "timestamp": "2025-05-23T03:02:47.370019",
+        "operation": "geonorge_oslo_search",
+        "oslo_context": true,
+        "details": {
+          "total_results": 50,
+          "oslo_specific": 44,
+          "summary": "Found 44 Oslo-specific plans on Geonorge"
+        }
+      },
+      {
+        "timestamp": "2025-05-23T03:02:47.499737",
+        "operation": "oslo_pdf_processing",
+        "oslo_context": true,
+        "details": {
+          "files_processed": 1,
+          "oslo_relevant_found": 0,
+          "summary": "Processed 0 Oslo-relevant PDFs"
+        }
+      },
+      {
+        "timestamp": "2025-05-23T03:02:47.499957",
+        "operation": "oslo_data_integration",
+        "oslo_context": true,
+        "details": {
+          "origo_datasets": 5,
+          "geonorge_oslo_plans": 44,
+          "oslo_pdfs": 0,
+          "total_oslo_sources": 49,
+          "summary": "Integrated 49 Oslo data sources"
+        }
+      }
+    ]
+  },
+  "oslo_metadata": {
+    "kommune": "Oslo",
+    "bydeler": [
+      "sentrum",
+      "grünerløkka",
+      "frogner",
+      "gamle oslo",
+      "st. hanshaugen",
+      "sagene",
+      "ullern",
+      "vestre aker",
+      "nordre aker",
+      "bjerke",
+      "grorud",
+      "stovner",
+      "alna",
+      "østensjø",
+      "nordstrand",
+      "søndre nordstrand"
+    ],
+    "plantyper": [
+      "kommuneplan",
+      "reguleringsplaner",
+      "temaplaner"
+    ],
+    "kontakt": "dataplattform@oslo.kommune.no"
+  }
+}

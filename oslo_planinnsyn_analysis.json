@@ -1,0 +1,16 @@
+{
+  "generated_at": "2025-05-23T02:00:13.426080",
+  "base_url": "https://od2.pbe.oslo.kommune.no/",
+  "summary": {
+    "potential_apis": 0,
+    "data_endpoints": 0,
+    "planning_resources": 0,
+    "wfs_wms_services": 0
+  },
+  "findings": {
+    "potential_apis": [],
+    "data_endpoints": [],
+    "planning_resources": [],
+    "wfs_wms_services": []
+  }
+}

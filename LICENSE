@@ -1,0 +1,46 @@
+MIT License
+
+Copyright (c) 2024 Oslo Planning Documents - Premium
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## Additional Terms
+
+### Data Attribution
+All planning documents and official data remain the property of Oslo Kommune.
+This software provides a presentation layer and does not claim ownership of
+municipal planning documents.
+
+### Official Sources
+All document URLs and references point to official Oslo Kommune sources at
+oslo.kommune.no. Users should refer to official sources for authoritative
+information.
+
+### Disclaimer
+This application is for informational purposes only. While every effort has
+been made to ensure accuracy, users should verify information with official
+Oslo Kommune sources for legal and planning purposes.
+
+### Contact Oslo Kommune
+For official planning inquiries:
+- Website: https://oslo.kommune.no
+- Email: postmottak@oslo.kommune.no
+- Phone: +47 02180

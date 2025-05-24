@@ -1,0 +1,101 @@
+[
+  {
+    "file_info": {
+      "path": "sample_regulatory_plan.pdf",
+      "filename": "sample_regulatory_plan.pdf",
+      "size_bytes": 1965,
+      "parsed_at": "2025-05-23T01:53:25.148389"
+    },
+    "content_analysis": {
+      "total_chars": 355,
+      "total_words": 44,
+      "total_lines": 17
+    },
+    "extracted_info": {
+      "plan_id": "2024-001",
+      "municipality": "REGULERINGSPLAN\nEksempel",
+      "coordinates": [],
+      "dates": [
+        {
+          "raw": "15.03.2024",
+          "components": [
+            "15",
+            "03",
+            "2024"
+          ]
+        }
+      ]
+    },
+    "keywords": {
+      "plan_info": [
+        {
+          "keyword": "reguleringsplan",
+          "context": "REGULERINGSPLAN"
+        },
+        {
+          "keyword": "plan-id",
+          "context": "Plan-ID: 2024-001"
+        },
+        {
+          "keyword": "saksnummer",
+          "context": "Saksnummer: 24/00123"
+        }
+      ],
+      "administrative": [
+        {
+          "keyword": "kommune",
+          "context": "Eksempel kommune"
+        },
+        {
+          "keyword": "kommune",
+          "context": "Kommune: Eksempel kommune"
+        },
+        {
+          "keyword": "plantype",
+          "context": "Plantype: Detaljregulering"
+        },
+        {
+          "keyword": "vedtaksdato",
+          "context": "Vedtaksdato: 15.03.2024"
+        }
+      ],
+      "areas": [
+        {
+          "keyword": "areal",
+          "context": "AREAL:"
+        },
+        {
+          "keyword": "areal",
+          "context": "Totalt planareal: 2,5 hektar"
+        },
+        {
+          "keyword": "hektar",
+          "context": "Totalt planareal: 2,5 hektar"
+        },
+        {
+          "keyword": "hektar",
+          "context": "Byggeområde: 1,8 hektar"
+        },
+        {
+          "keyword": "byggeområde",
+          "context": "Byggeområde: 1,8 hektar"
+        }
+      ],
+      "zoning": [
+        {
+          "keyword": "formål",
+          "context": "FORMÅL:"
+        },
+        {
+          "keyword": "grønnstruktur",
+          "context": "- Grønnstruktur (§12-5 nr. 3)"
+        },
+        {
+          "keyword": "boligbebyggelse",
+          "context": "- Boligbebyggelse (§12-5 nr. 1)"
+        }
+      ]
+    },
+    "sample_text": "REGULERINGSPLAN\nEksempel kommune\nPlan-ID: 2024-001\nSaksnummer: 24/00123\nKommune: Eksempel kommune\nPlantype: Detaljregulering\nVedtaksdato: 15.03.2024\nFORMÅL:\n- Boligbebyggelse (§12-5 nr. 1)\n- Grønnstruktur (§12-5 nr. 3)\nAREAL:\nTotalt planareal: 2,5 hektar\nByggeområde: 1,8 hektar\nKOORDINATER (UTM 33):\nNord: 6643210, Øst: 598765\nNord: 6643185, Øst: 598820\n"
+  }
+]

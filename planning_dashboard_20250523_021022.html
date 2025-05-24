@@ -1,0 +1,477 @@
+
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrert Plandata Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            border-left: 4px solid #667eea;
+        }
+        
+        .card h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            color: #666;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .progress-bar {
+            background: #f0f0f0;
+            border-radius: 10px;
+            height: 20px;
+            margin: 10px 0;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            height: 100%;
+            border-radius: 10px;
+            transition: width 0.3s ease;
+        }
+        
+        .municipality-list {
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        
+        .municipality-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .source-badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            margin: 2px;
+        }
+        
+        .log-item {
+            background: #f8f9fa;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 0.9em;
+        }
+        
+        .log-timestamp {
+            color: #666;
+            font-size: 0.8em;
+        }
+        
+        .recommendations {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 5px;
+            padding: 15px;
+        }
+        
+        .recommendations li {
+            margin: 5px 0;
+            color: #856404;
+        }
+        
+        .refresh-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1em;
+            margin: 20px;
+            transition: transform 0.2s;
+        }
+        
+        .refresh-btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .full-width {
+            grid-column: 1 / -1;
+        }
+        
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        
+        .data-table th,
+        .data-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .data-table th {
+            background: #f8f9fa;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .data-table tr:hover {
+            background: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏗️ Integrert Plandata Dashboard</h1>
+            <p>Oversikt over reguleringsplaner fra Geonorge, Oslo Origo og PDF-analyse</p>
+            <p style="font-size: 0.9em; opacity: 0.7;">Sist oppdatert: 23.05.2025 02:10</p>
+        </div>
+        
+        <div class="dashboard-grid">
+            <!-- Statistics Cards -->
+            <div class="card">
+                <h3>📊 Totalt antall planer</h3>
+                <div class="stat-number">51</div>
+                <div class="stat-label">Reguleringsplaner</div>
+            </div>
+            
+            <div class="card">
+                <h3>🏘️ Kommuner dekket</h3>
+                <div class="stat-number">7</div>
+                <div class="stat-label">Kommuner</div>
+            </div>
+            
+            <div class="card">
+                <h3>🔗 Kryss-referanser</h3>
+                <div class="stat-number">0</div>
+                <div class="stat-label">Sammenkoblede planer</div>
+            </div>
+            
+            <!-- Data Sources -->
+            <div class="card">
+                <h3>📡 Datakilder</h3>
+                
+            <div style="margin-bottom: 15px;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                    <span class="source-badge">geonorge</span>
+                    <span>50 planer</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 98.0392156862745%;"></div>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                    <span class="source-badge">oslo_origo</span>
+                    <span>1 planer</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 1.9607843137254901%;"></div>
+                </div>
+            </div>
+            
+            </div>
+            
+            <!-- Quality Metrics -->
+            <div class="card">
+                <h3>📈 Kvalitetsmetrikker</h3>
+                
+            <div style="margin-bottom: 15px;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                    <span>Med koordinater</span>
+                    <span>0</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0.0%;"></div>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                    <span>Med beskrivelser</span>
+                    <span>50</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 98.0392156862745%;"></div>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                    <span>PDF-analyser</span>
+                    <span>1</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 1.9607843137254901%;"></div>
+                </div>
+            </div>
+            
+            </div>
+            
+            <!-- Municipalities -->
+            <div class="card">
+                <h3>🗺️ Kommuner</h3>
+                <div class="municipality-list">
+                    
+            <div class="municipality-item">
+                <span>Høydedata Oslo</span>
+                <span style="color: #667eea; font-weight: bold;">8</span>
+            </div>
+            
+            <div class="municipality-item">
+                <span>Krav til parkeringsdekning i Lillestrøm</span>
+                <span style="color: #667eea; font-weight: bold;">1</span>
+            </div>
+            
+            <div class="municipality-item">
+                <span>Ortofoto Oslo</span>
+                <span style="color: #667eea; font-weight: bold;">3</span>
+            </div>
+            
+            <div class="municipality-item">
+                <span>Oslo</span>
+                <span style="color: #667eea; font-weight: bold;">1</span>
+            </div>
+            
+            <div class="municipality-item">
+                <span>Reguleringsplaner Hvaler</span>
+                <span style="color: #667eea; font-weight: bold;">1</span>
+            </div>
+            
+            <div class="municipality-item">
+                <span>Reguleringsplaner i Fredrikstad</span>
+                <span style="color: #667eea; font-weight: bold;">1</span>
+            </div>
+            
+            <div class="municipality-item">
+                <span>Temaplan bevaring Kongsberg</span>
+                <span style="color: #667eea; font-weight: bold;">1</span>
+            </div>
+            
+                </div>
+            </div>
+            
+            <!-- Latest Plans -->
+            <div class="card full-width">
+                <h3>📋 Siste planer</h3>
+                
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Plan</th>
+                    <th>Kommune</th>
+                    <th>Kilde</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+        
+            <tr>
+                <td><strong>Reguleringsplaner</strong><br><small>ID: 00036352-a2aa-4b90-89d1-862bc80439d3</small></td>
+                <td>Unknown</td>
+                <td><span class="source-badge">geonorge</span></td>
+                <td>Aktiv</td>
+            </tr>
+            
+            <tr>
+                <td><strong>Reguleringsplanforslag</strong><br><small>ID: 1bef5134-0439-4fae-a7c1-1d024e7e667b</small></td>
+                <td>Unknown</td>
+                <td><span class="source-badge">geonorge</span></td>
+                <td>Aktiv</td>
+            </tr>
+            
+            <tr>
+                <td><strong>Reguleringsplaner i Fredrikstad kommune</strong><br><small>ID: 38bebafc-6667-40aa-b642-884a4714fdd1</small></td>
+                <td>Reguleringsplaner i Fredrikstad</td>
+                <td><span class="source-badge">geonorge</span></td>
+                <td>Aktiv</td>
+            </tr>
+            
+            <tr>
+                <td><strong>Reguleringsplaner Hvaler kommune</strong><br><small>ID: 914b65e7-226f-4104-8c96-65df9128931d</small></td>
+                <td>Reguleringsplaner Hvaler</td>
+                <td><span class="source-badge">geonorge</span></td>
+                <td>Aktiv</td>
+            </tr>
+            
+            <tr>
+                <td><strong>Temaplan bevaring Kongsberg kommune</strong><br><small>ID: 4f97d8a2-9af1-49da-86a4-2857b24ee6b8</small></td>
+                <td>Temaplan bevaring Kongsberg</td>
+                <td><span class="source-badge">geonorge</span></td>
+                <td>Aktiv</td>
+            </tr>
+            
+            <tr>
+                <td><strong>Krav til parkeringsdekning i Lillestrøm kommune - ...</strong><br><small>ID: 5ecbb122-1224-464c-b715-dc74b55ace88</small></td>
+                <td>Krav til parkeringsdekning i Lillestrøm</td>
+                <td><span class="source-badge">geonorge</span></td>
+                <td>Aktiv</td>
+            </tr>
+            
+            <tr>
+                <td><strong>Byggegrense vassdrag KPLAN § 6.2 abc Nordre Follo</strong><br><small>ID: bd1fedb5-8e99-4450-8a77-94e293bcae6b</small></td>
+                <td>Unknown</td>
+                <td><span class="source-badge">geonorge</span></td>
+                <td>Aktiv</td>
+            </tr>
+            
+            <tr>
+                <td><strong>Byggegrense vassdrag KPLAN § 6.2 d Nordre Follo</strong><br><small>ID: a17a87d9-da32-4bb2-9caa-04bce28d4222</small></td>
+                <td>Unknown</td>
+                <td><span class="source-badge">geonorge</span></td>
+                <td>Aktiv</td>
+            </tr>
+            
+            <tr>
+                <td><strong>Planlagt utbyggingsareal i Norge</strong><br><small>ID: 8702ed9b-6f7c-4ecc-86d6-de2868ec5c8d</small></td>
+                <td>Unknown</td>
+                <td><span class="source-badge">geonorge</span></td>
+                <td>Aktiv</td>
+            </tr>
+            
+            <tr>
+                <td><strong>FKB-Arealbruk</strong><br><small>ID: 87b31015-a3de-4540-9b8b-cb1bf4e1cb3a</small></td>
+                <td>Unknown</td>
+                <td><span class="source-badge">geonorge</span></td>
+                <td>Aktiv</td>
+            </tr>
+            
+            </tbody>
+        </table>
+        
+            </div>
+            
+            <!-- Processing Log -->
+            <div class="card">
+                <h3>📝 Prosesseringslogg</h3>
+                
+            <div class="log-item">
+                <div class="log-timestamp">02:09:13</div>
+                <div><strong>geonorge_search</strong></div>
+                <div style="font-size: 0.8em; color: #666;">Found 50 plans from Geonorge</div>
+            </div>
+            
+            <div class="log-item">
+                <div class="log-timestamp">02:09:13</div>
+                <div><strong>oslo_origo_search</strong></div>
+                <div style="font-size: 0.8em; color: #666;">Using sample Oslo data for integration testing</div>
+            </div>
+            
+            <div class="log-item">
+                <div class="log-timestamp">02:09:13</div>
+                <div><strong>pdf_processing</strong></div>
+                <div style="font-size: 0.8em; color: #666;">Processed 1/1 PDF files</div>
+            </div>
+            
+            <div class="log-item">
+                <div class="log-timestamp">02:09:13</div>
+                <div><strong>data_integration</strong></div>
+                <div style="font-size: 0.8em; color: #666;">Integrated data from 52 sources</div>
+            </div>
+            
+            </div>
+            
+            <!-- Recommendations -->
+            <div class="card">
+                <h3>💡 Anbefalinger</h3>
+                <div class="recommendations">
+                    <ul>
+                        <li>Lav andel planer med koordinater - vurder å forbedre geografisk datainnsamling</li><li>Implementer automatisk overvåking av nye planpublikasjoner</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <center>
+            <button class="refresh-btn" onclick="location.reload()">
+                🔄 Oppdater Dashboard
+            </button>
+        </center>
+    </div>
+    
+    <script>
+        // Auto-refresh every 5 minutes
+        setTimeout(() => location.reload(), 300000);
+        
+        // Progress bar animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const progressBars = document.querySelectorAll('.progress-fill');
+            progressBars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0%';
+                setTimeout(() => {
+                    bar.style.width = width;
+                }, 500);
+            });
+        });
+    </script>
+</body>
+</html>

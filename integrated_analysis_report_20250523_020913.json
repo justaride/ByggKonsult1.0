@@ -1,0 +1,64 @@
+{
+  "generation_time": "2025-05-23T02:09:13.917843",
+  "data_summary": {
+    "total_plans": 51,
+    "sources_breakdown": {
+      "geonorge": 50,
+      "oslo_origo": 1,
+      "pdf_analyses": 1
+    },
+    "cross_referenced_plans": 0,
+    "municipalities_covered": 8
+  },
+  "quality_metrics": {
+    "plans_with_coordinates": 0,
+    "plans_with_plan_id": 51,
+    "plans_with_pdf_data": 0
+  },
+  "processing_summary": [
+    {
+      "timestamp": "2025-05-23T02:09:13.628882",
+      "operation": "geonorge_search",
+      "details": {
+        "municipality": "Oslo",
+        "plans_found": 50,
+        "summary": "Found 50 plans from Geonorge"
+      }
+    },
+    {
+      "timestamp": "2025-05-23T02:09:13.629877",
+      "operation": "oslo_origo_search",
+      "details": {
+        "status": "sample_data",
+        "plans_found": 1,
+        "summary": "Using sample Oslo data for integration testing"
+      }
+    },
+    {
+      "timestamp": "2025-05-23T02:09:13.917683",
+      "operation": "pdf_processing",
+      "details": {
+        "files_processed": 1,
+        "successful_analyses": 1,
+        "summary": "Processed 1/1 PDF files"
+      }
+    },
+    {
+      "timestamp": "2025-05-23T02:09:13.917778",
+      "operation": "data_integration",
+      "details": {
+        "geonorge_plans": 50,
+        "oslo_plans": 1,
+        "pdf_analyses": 1,
+        "total_integrated": 51,
+        "summary": "Integrated data from 52 sources"
+      }
+    }
+  ],
+  "recommendations": [
+    "Low cross-reference rate - consider improving plan ID matching algorithms",
+    "No Oslo Origo data found - set up authentication with dataplattform@oslo.kommune.no",
+    "Consider expanding to additional municipalities",
+    "Implement automated monitoring for new plan publications"
+  ]
+}

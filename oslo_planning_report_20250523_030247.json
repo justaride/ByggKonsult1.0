@@ -1,0 +1,49 @@
+{
+  "report_type": "oslo_planning_system",
+  "generated_at": "2025-05-23T03:02:47.500157",
+  "oslo_summary": {
+    "total_oslo_data_points": 49,
+    "origo_status": "configured_needs_auth",
+    "pbe_systems_checked": 5,
+    "oslo_coverage": {
+      "covered_oslo_areas": 0,
+      "total_oslo_areas": 16,
+      "coverage_percentage": 0.0,
+      "missing_areas": [
+        "sentrum",
+        "grünerløkka",
+        "frogner",
+        "gamle oslo",
+        "st. hanshaugen",
+        "sagene",
+        "ullern",
+        "vestre aker",
+        "nordre aker",
+        "bjerke",
+        "grorud",
+        "stovner",
+        "alna",
+        "østensjø",
+        "nordstrand",
+        "søndre nordstrand"
+      ]
+    }
+  },
+  "data_quality": {
+    "oslo_specific_data": 49,
+    "multi_source_items": 0,
+    "areas_covered": 0
+  },
+  "recommendations": [
+    "Få Origo API-tilgang fra dataplattform@oslo.kommune.no",
+    "Test okdata-cli med ekte Oslo datasett",
+    "Utvide PDF-samling med Oslo-planer",
+    "Implementere real-time oppdatering fra Oslo-kilder",
+    "Fokusere på manglende bydeler i datasamlingen"
+  ],
+  "oslo_contacts": {
+    "origo_platform": "dataplattform@oslo.kommune.no",
+    "pbe_main": "postmottak.pbe@oslo.kommune.no",
+    "phone": "02180"
+  }
+}

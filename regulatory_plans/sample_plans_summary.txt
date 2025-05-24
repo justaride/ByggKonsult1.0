@@ -1,0 +1,130 @@
+=== REGULERINGSPLANER - EKSEMPELSAMLING ===
+Generert: 2025-05-23 01:47:56
+Totalt antall planer funnet: 28
+
+
+--- Oslo (4 planer) ---
+1. Reguleringsplaner
+   Organisasjon: Kommunene
+   UUID: 00036352-a2aa-4b90-89d1-862bc80439d3
+
+2. Reguleringsplanforslag
+   Organisasjon: Kommunene
+   UUID: 1bef5134-0439-4fae-a7c1-1d024e7e667b
+
+3. Reguleringsplaner i Fredrikstad kommune
+   Organisasjon: Fredrikstad kommune
+   UUID: 38bebafc-6667-40aa-b642-884a4714fdd1
+
+4. Reguleringsplaner Hvaler kommune
+   Organisasjon: Fredrikstad kommune
+   UUID: 914b65e7-226f-4104-8c96-65df9128931d
+
+
+--- Bergen (4 planer) ---
+1. Reguleringsplaner
+   Organisasjon: Kommunene
+   UUID: 00036352-a2aa-4b90-89d1-862bc80439d3
+
+2. Reguleringsplaner i Fredrikstad kommune
+   Organisasjon: Fredrikstad kommune
+   UUID: 38bebafc-6667-40aa-b642-884a4714fdd1
+
+3. Reguleringsplanforslag
+   Organisasjon: Kommunene
+   UUID: 1bef5134-0439-4fae-a7c1-1d024e7e667b
+
+4. Reguleringsplaner Hvaler kommune
+   Organisasjon: Fredrikstad kommune
+   UUID: 914b65e7-226f-4104-8c96-65df9128931d
+
+
+--- Stavanger (4 planer) ---
+1. Reguleringsplaner
+   Organisasjon: Kommunene
+   UUID: 00036352-a2aa-4b90-89d1-862bc80439d3
+
+2. Reguleringsplaner i Fredrikstad kommune
+   Organisasjon: Fredrikstad kommune
+   UUID: 38bebafc-6667-40aa-b642-884a4714fdd1
+
+3. Reguleringsplanforslag
+   Organisasjon: Kommunene
+   UUID: 1bef5134-0439-4fae-a7c1-1d024e7e667b
+
+4. Reguleringsplaner Hvaler kommune
+   Organisasjon: Fredrikstad kommune
+   UUID: 914b65e7-226f-4104-8c96-65df9128931d
+
+
+--- Trondheim (4 planer) ---
+1. Reguleringsplaner i Fredrikstad kommune
+   Organisasjon: Fredrikstad kommune
+   UUID: 38bebafc-6667-40aa-b642-884a4714fdd1
+
+2. Reguleringsplaner Hvaler kommune
+   Organisasjon: Fredrikstad kommune
+   UUID: 914b65e7-226f-4104-8c96-65df9128931d
+
+3. Reguleringsplaner
+   Organisasjon: Kommunene
+   UUID: 00036352-a2aa-4b90-89d1-862bc80439d3
+
+4. Reguleringsplanforslag
+   Organisasjon: Kommunene
+   UUID: 1bef5134-0439-4fae-a7c1-1d024e7e667b
+
+
+--- Kristiansand (4 planer) ---
+1. Reguleringsplaner i Fredrikstad kommune
+   Organisasjon: Fredrikstad kommune
+   UUID: 38bebafc-6667-40aa-b642-884a4714fdd1
+
+2. Reguleringsplaner
+   Organisasjon: Kommunene
+   UUID: 00036352-a2aa-4b90-89d1-862bc80439d3
+
+3. Reguleringsplanforslag
+   Organisasjon: Kommunene
+   UUID: 1bef5134-0439-4fae-a7c1-1d024e7e667b
+
+4. Reguleringsplaner Hvaler kommune
+   Organisasjon: Fredrikstad kommune
+   UUID: 914b65e7-226f-4104-8c96-65df9128931d
+
+
+--- Drammen (4 planer) ---
+1. Reguleringsplaner
+   Organisasjon: Kommunene
+   UUID: 00036352-a2aa-4b90-89d1-862bc80439d3
+
+2. Reguleringsplanforslag
+   Organisasjon: Kommunene
+   UUID: 1bef5134-0439-4fae-a7c1-1d024e7e667b
+
+3. Reguleringsplaner i Fredrikstad kommune
+   Organisasjon: Fredrikstad kommune
+   UUID: 38bebafc-6667-40aa-b642-884a4714fdd1
+
+4. Reguleringsplaner Hvaler kommune
+   Organisasjon: Fredrikstad kommune
+   UUID: 914b65e7-226f-4104-8c96-65df9128931d
+
+
+--- Tromsø (4 planer) ---
+1. Reguleringsplaner Hvaler kommune
+   Organisasjon: Fredrikstad kommune
+   UUID: 914b65e7-226f-4104-8c96-65df9128931d
+
+2. Reguleringsplaner i Fredrikstad kommune
+   Organisasjon: Fredrikstad kommune
+   UUID: 38bebafc-6667-40aa-b642-884a4714fdd1
+
+3. Reguleringsplaner
+   Organisasjon: Kommunene
+   UUID: 00036352-a2aa-4b90-89d1-862bc80439d3
+
+4. Reguleringsplanforslag
+   Organisasjon: Kommunene
+   UUID: 1bef5134-0439-4fae-a7c1-1d024e7e667b
+

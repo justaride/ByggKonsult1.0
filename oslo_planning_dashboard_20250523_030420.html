@@ -1,0 +1,481 @@
+
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oslo Planning Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .oslo-header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+        
+        .oslo-logo {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        
+        .oslo-title {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .oslo-subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .dashboard-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .oslo-stats-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 30px;
+        }
+        
+        .oslo-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            border-left: 5px solid #1e3c72;
+            transition: transform 0.3s ease;
+        }
+        
+        .oslo-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .oslo-card h3 {
+            color: #1e3c72;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            display: flex;
+            align-items: center;
+        }
+        
+        .oslo-icon {
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+        
+        .oslo-stat-number {
+            font-size: 3em;
+            font-weight: bold;
+            color: #2a5298;
+            margin-bottom: 10px;
+        }
+        
+        .oslo-stat-label {
+            color: #666;
+            font-size: 1.1em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .oslo-progress-bar {
+            background: #f0f0f0;
+            border-radius: 15px;
+            height: 25px;
+            margin: 15px 0;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .oslo-progress-fill {
+            background: linear-gradient(90deg, #1e3c72, #2a5298);
+            height: 100%;
+            border-radius: 15px;
+            transition: width 1s ease;
+            position: relative;
+        }
+        
+        .oslo-progress-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        
+        .bydel-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .bydel-item {
+            padding: 8px 12px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+        
+        .bydel-covered {
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+        }
+        
+        .bydel-missing {
+            background: #f5f5f5;
+            color: #666;
+            border: 2px dashed #ddd;
+        }
+        
+        .oslo-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        .oslo-table th,
+        .oslo-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .oslo-table th {
+            background: #f8f9fa;
+            font-weight: 600;
+            color: #1e3c72;
+        }
+        
+        .oslo-table tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .source-tag {
+            display: inline-block;
+            background: #1e3c72;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            margin: 2px;
+        }
+        
+        .oslo-footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .oslo-contact {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        .oslo-contact strong {
+            color: #856404;
+        }
+        
+        .full-width {
+            grid-column: 1 / -1;
+        }
+        
+        .refresh-btn {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1.1em;
+            margin: 20px;
+            transition: transform 0.2s;
+            box-shadow: 0 4px 15px rgba(30, 60, 114, 0.3);
+        }
+        
+        .refresh-btn:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="oslo-header">
+        <div class="oslo-logo">🏛️</div>
+        <div class="oslo-title">Oslo Planning Dashboard</div>
+        <div class="oslo-subtitle">Plandata og regulering for Oslo kommune</div>
+        <div style="font-size: 0.9em; opacity: 0.7; margin-top: 10px;">
+            Sist oppdatert: 23.05.2025 03:04
+        </div>
+    </div>
+    
+    <div class="dashboard-container">
+        <div class="oslo-stats-header">
+            <h2>📊 Oslo Plandata Oversikt</h2>
+            <p>Komplett oversikt over tilgjengelige plandata for Oslo kommune</p>
+        </div>
+        
+        <div class="dashboard-grid">
+            <!-- Hovedstatistikk -->
+            <div class="oslo-card">
+                <h3><span class="oslo-icon">📋</span>Totalt plandata</h3>
+                <div class="oslo-stat-number">49</div>
+                <div class="oslo-stat-label">Oslo datasett</div>
+            </div>
+            
+            <div class="oslo-card">
+                <h3><span class="oslo-icon">🏢</span>Origo datasett</h3>
+                <div class="oslo-stat-number">5</div>
+                <div class="oslo-stat-label">Fra Oslo Origo</div>
+            </div>
+            
+            <div class="oslo-card">
+                <h3><span class="oslo-icon">📄</span>Reguleringsplaner</h3>
+                <div class="oslo-stat-number">44</div>
+                <div class="oslo-stat-label">Fra Geonorge</div>
+            </div>
+            
+            <!-- Bydelsdekning -->
+            <div class="oslo-card full-width">
+                <h3><span class="oslo-icon">🗺️</span>Bydelsdekning</h3>
+                <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                    <div class="oslo-stat-number" style="font-size: 2em; margin-right: 20px;">
+                        0/16
+                    </div>
+                    <div>
+                        <div class="oslo-stat-label">Bydeler dekket</div>
+                        <div class="oslo-progress-bar" style="width: 200px;">
+                            <div class="oslo-progress-fill" style="width: 0.0%;">
+                                <div class="oslo-progress-text">0.0%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h4 style="margin-bottom: 15px; color: #1e3c72;">Oslo Bydeler:</h4>
+                <div class="bydel-grid">
+                    <div class="bydel-item bydel-missing">Sentrum</div><div class="bydel-item bydel-missing">Grünerløkka</div><div class="bydel-item bydel-missing">Frogner</div><div class="bydel-item bydel-missing">Gamle Oslo</div><div class="bydel-item bydel-missing">St. Hanshaugen</div><div class="bydel-item bydel-missing">Sagene</div><div class="bydel-item bydel-missing">Ullern</div><div class="bydel-item bydel-missing">Vestre Aker</div><div class="bydel-item bydel-missing">Nordre Aker</div><div class="bydel-item bydel-missing">Bjerke</div><div class="bydel-item bydel-missing">Grorud</div><div class="bydel-item bydel-missing">Stovner</div><div class="bydel-item bydel-missing">Alna</div><div class="bydel-item bydel-missing">Østensjø</div><div class="bydel-item bydel-missing">Nordstrand</div><div class="bydel-item bydel-missing">Søndre Nordstrand</div>
+                </div>
+            </div>
+            
+            <!-- Datakilder -->
+            <div class="oslo-card">
+                <h3><span class="oslo-icon">📡</span>Datakilder</h3>
+                
+            <div style="margin-bottom: 15px;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                    <span class="source-tag">Oslo Origo</span>
+                    <span><strong>5</strong></span>
+                </div>
+                <div class="oslo-progress-bar">
+                    <div class="oslo-progress-fill" style="width: 10.204081632653061%;"></div>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                    <span class="source-tag">Geonorge Oslo</span>
+                    <span><strong>44</strong></span>
+                </div>
+                <div class="oslo-progress-bar">
+                    <div class="oslo-progress-fill" style="width: 89.79591836734694%;"></div>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                    <span class="source-tag">Oslo PDFs</span>
+                    <span><strong>0</strong></span>
+                </div>
+                <div class="oslo-progress-bar">
+                    <div class="oslo-progress-fill" style="width: 0.0%;"></div>
+                </div>
+            </div>
+            
+            </div>
+            
+            <!-- Oslo kontakt info -->
+            <div class="oslo-card">
+                <h3><span class="oslo-icon">📞</span>Oslo Kontakter</h3>
+                <div class="oslo-contact">
+                    <strong>Origo Dataplatform:</strong><br>
+                    📧 dataplattform@oslo.kommune.no<br>
+                    <small>For API-tilgang og datasett</small>
+                </div>
+                <div class="oslo-contact">
+                    <strong>Plan- og bygningsetaten (PBE):</strong><br>
+                    📧 postmottak.pbe@oslo.kommune.no<br>
+                    ☎️ 02180<br>
+                    <small>For byggesaker og reguleringsplaner</small>
+                </div>
+            </div>
+            
+            <!-- Siste Oslo planer -->
+            <div class="oslo-card full-width">
+                <h3><span class="oslo-icon">📋</span>Siste Oslo Planer</h3>
+                
+        <table class="oslo-table">
+            <thead>
+                <tr>
+                    <th>Plan</th>
+                    <th>Område</th>
+                    <th>Organisasjon</th>
+                    <th>Kilde</th>
+                </tr>
+            </thead>
+            <tbody>
+        
+            <tr>
+                <td><strong>HC-plasser i Oslo</strong></td>
+                <td>Oslo</td>
+                <td>Oslo kommune</td>
+                <td><span class="source-tag">geonorge_oslo</span></td>
+            </tr>
+            
+            <tr>
+                <td><strong>Ortofoto Oslo kommune 2020</strong></td>
+                <td>Oslo</td>
+                <td>Geovekst</td>
+                <td><span class="source-tag">geonorge_oslo</span></td>
+            </tr>
+            
+            <tr>
+                <td><strong>Dreneringslinjer i Oslo og Viken</strong></td>
+                <td>Oslo</td>
+                <td>Kartverket</td>
+                <td><span class="source-tag">geonorge_oslo</span></td>
+            </tr>
+            
+            <tr>
+                <td><strong>Ortofoto Oslo kommune 2019</strong></td>
+                <td>Oslo</td>
+                <td>Geovekst</td>
+                <td><span class="source-tag">geonorge_oslo</span></td>
+            </tr>
+            
+            <tr>
+                <td><strong>Ortofoto Oslo kommune 2017</strong></td>
+                <td>Oslo</td>
+                <td>Geovekst</td>
+                <td><span class="source-tag">geonorge_oslo</span></td>
+            </tr>
+            
+            <tr>
+                <td><strong>Ortofoto Oslo kommune 2018</strong></td>
+                <td>Oslo</td>
+                <td>Geovekst</td>
+                <td><span class="source-tag">geonorge_oslo</span></td>
+            </tr>
+            
+            <tr>
+                <td><strong>Ortofoto Oslo 2014</strong></td>
+                <td>Oslo</td>
+                <td>Geovekst</td>
+                <td><span class="source-tag">geonorge_oslo</span></td>
+            </tr>
+            
+            <tr>
+                <td><strong>Ortofoto Oslo 2015</strong></td>
+                <td>Oslo</td>
+                <td>Geovekst</td>
+                <td><span class="source-tag">geonorge_oslo</span></td>
+            </tr>
+            
+            <tr>
+                <td><strong>Ortofoto Oslo 2016</strong></td>
+                <td>Oslo</td>
+                <td>Geovekst</td>
+                <td><span class="source-tag">geonorge_oslo</span></td>
+            </tr>
+            
+            <tr>
+                <td><strong>Ortofoto Oslo vår 2021</strong></td>
+                <td>Oslo</td>
+                <td>Geovekst</td>
+                <td><span class="source-tag">geonorge_oslo</span></td>
+            </tr>
+            
+            </tbody>
+        </table>
+        
+            </div>
+        </div>
+        
+        <div class="oslo-footer">
+            <p><strong>Oslo Planning Dashboard</strong> - Dedikert for Oslo kommune</p>
+            <p>Integrerer Origo, PBE-systemer og Geonorge data</p>
+            <button class="refresh-btn" onclick="location.reload()">
+                🔄 Oppdater Oslo Data
+            </button>
+        </div>
+    </div>
+    
+    <script>
+        // Animasjoner for Oslo dashboard
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animer progress bars
+            const progressBars = document.querySelectorAll('.oslo-progress-fill');
+            progressBars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0%';
+                setTimeout(() => {
+                    bar.style.width = width;
+                }, 500);
+            });
+            
+            // Animer statistikk-tall
+            const statNumbers = document.querySelectorAll('.oslo-stat-number');
+            statNumbers.forEach(num => {
+                const finalValue = parseInt(num.textContent);
+                if (!isNaN(finalValue)) {
+                    let currentValue = 0;
+                    const increment = finalValue / 30;
+                    const timer = setInterval(() => {
+                        currentValue += increment;
+                        if (currentValue >= finalValue) {
+                            currentValue = finalValue;
+                            clearInterval(timer);
+                        }
+                        num.textContent = Math.floor(currentValue);
+                    }, 50);
+                }
+            });
+        });
+        
+        // Auto-refresh hver 10 minutter
+        setTimeout(() => location.reload(), 600000);
+    </script>
+</body>
+</html>

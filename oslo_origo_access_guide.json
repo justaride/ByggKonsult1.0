@@ -1,0 +1,84 @@
+{
+  "title": "Oslo Origo Dataplatform - Tilgangsguide",
+  "generated_at": "2025-05-23T02:01:32.151388",
+  "platform_info": {
+    "name": "Oslo Origo Dataplatform",
+    "sdk": "okdata-sdk",
+    "cli": "okdata-cli",
+    "contact": "dataplattform@oslo.kommune.no",
+    "auth_methods": [
+      "client_credentials",
+      "username_password",
+      "api_key"
+    ],
+    "environments": [
+      "dev",
+      "prod"
+    ]
+  },
+  "steps": {
+    "1_installation": {
+      "description": "Installer Oslo SDK",
+      "commands": [
+        "pip install okdata-sdk",
+        "pip install okdata-cli"
+      ]
+    },
+    "2_authentication": {
+      "description": "Sett opp autentisering",
+      "options": {
+        "client_credentials": {
+          "description": "For automatiserte systemer",
+          "contact": "dataplattform@oslo.kommune.no",
+          "env_vars": [
+            "OKDATA_CLIENT_ID",
+            "OKDATA_CLIENT_SECRET"
+          ]
+        },
+        "username_password": {
+          "description": "For AD-brukere (Oslo ansatte)",
+          "env_vars": [
+            "OKDATA_USERNAME",
+            "OKDATA_PASSWORD"
+          ]
+        },
+        "api_key": {
+          "description": "For events og spesifikke tjenester",
+          "env_vars": [
+            "OKDATA_API_KEY"
+          ]
+        }
+      }
+    },
+    "3_configuration": {
+      "description": "Konfigurer environment",
+      "env_vars": {
+        "OKDATA_ENVIRONMENT": "dev eller prod",
+        "OKDATA_CACHE_CREDENTIALS": "true/false"
+      }
+    },
+    "4_testing": {
+      "description": "Test tilkobling",
+      "commands": [
+        "okdata datasets ls",
+        "okdata --help"
+      ]
+    }
+  },
+  "planning_data_strategy": {
+    "description": "Strategi for å finne reguleringsplandata",
+    "approaches": [
+      "Søk i datasett-katalogen etter plan-nøkkelord",
+      "Kontakt dataplattform-teamet for planspesifikk veiledning",
+      "Utforsk offentlige datasett først",
+      "Kombiner med nasjonale tjenester (Geonorge)"
+    ]
+  },
+  "next_steps": [
+    "Installer okdata-sdk og okdata-cli",
+    "Kontakt dataplattform@oslo.kommune.no for tilgang",
+    "Test med dev-environment først",
+    "Utforsk tilgjengelige datasett",
+    "Dokumenter funne plandata-kilder"
+  ]
+}

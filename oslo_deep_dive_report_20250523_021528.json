@@ -1,0 +1,1153 @@
+{
+  "generation_time": "2025-05-23T02:15:28.184372",
+  "scope": "Complete Oslo Kommune systems relevant for developers",
+  "origo_platform": {
+    "origo_datasets": [
+      {
+        "source": "github",
+        "name": "labs.oslo.kommune.no",
+        "description": "Origo labs Enonic XP application",
+        "url": "https://github.com/oslokommune/labs.oslo.kommune.no",
+        "topics": [],
+        "language": "JavaScript",
+        "updated_at": "2025-03-17T08:11:20Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "bydelsfakta",
+        "description": "Bydelsfakta is a frontend application for Oslo municipality which visualises demographic statistics and data on various topics for the 15 districts in the City of Oslo.",
+        "url": "https://github.com/oslokommune/bydelsfakta",
+        "topics": [
+          "bydelsfakta",
+          "d3",
+          "data-visualization",
+          "dataplatform",
+          "dataspeilet",
+          "visualises-demographic-statistics",
+          "vue"
+        ],
+        "language": "JavaScript",
+        "updated_at": "2025-05-13T07:00:14Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-cli",
+        "description": "Command line interface to the services provided by Oslo Origo's Dataplatform",
+        "url": "https://github.com/oslokommune/okdata-cli",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2025-05-16T10:54:00Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-sdk-python",
+        "description": "Python SDK for Origo Dataplatform",
+        "url": "https://github.com/oslokommune/okdata-sdk-python",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2025-02-12T08:38:01Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "origo-hackathon-tla-bot",
+        "description": "Simplest possible TLA (Three letter acronym/abbreviation) bot.",
+        "url": "https://github.com/oslokommune/origo-hackathon-tla-bot",
+        "topics": [],
+        "language": "JavaScript",
+        "updated_at": "2023-11-11T14:33:22Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "origo-testing-workshop",
+        "description": "Workshop om testing",
+        "url": "https://github.com/oslokommune/origo-testing-workshop",
+        "topics": [
+          "testing",
+          "workshop"
+        ],
+        "language": "JavaScript",
+        "updated_at": "2023-09-29T09:56:18Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "dataplatform-probe",
+        "description": "Monitoring service for dataplatform services and events ",
+        "url": "https://github.com/oslokommune/dataplatform-probe",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2025-03-04T07:25:40Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "dataplatform-prometheus",
+        "description": "Builds Prometheus bundled with our config for scraping of metrics. Migrated to https://github.com/oslokommune/dataplatform-config/tree/main/docker/prometheus",
+        "url": "https://github.com/oslokommune/dataplatform-prometheus",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Shell",
+        "updated_at": "2023-01-28T04:47:58Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "dataplatform-pipeline-alerts-email",
+        "description": "Sends alerts about failing pipelines as an email",
+        "url": "https://github.com/oslokommune/dataplatform-pipeline-alerts-email",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2025-02-18T13:52:52Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "helsedata-public",
+        "description": "Offentlig tilgjengelig informasjon for helsedata satsning",
+        "url": "https://github.com/oslokommune/helsedata-public",
+        "topics": [
+          "helsedata"
+        ],
+        "language": "HTML",
+        "updated_at": "2024-10-24T12:58:16Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-aws",
+        "description": "Collection of helpers for working with AWS Lambda",
+        "url": "https://github.com/oslokommune/okdata-aws",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2025-02-12T08:36:16Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-pipeline",
+        "description": "Collection of pipeline components for Origo Dataplattform",
+        "url": "https://github.com/oslokommune/okdata-pipeline",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2025-05-16T11:02:07Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-resource-auth",
+        "description": "Dataplatform resource authorizer",
+        "url": "https://github.com/oslokommune/okdata-resource-auth",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2022-08-18T11:38:41Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "serverless-blueprints",
+        "description": "Blueprints that can be used as starting points for Serverless applications in Oslo Origo",
+        "url": "https://github.com/oslokommune/serverless-blueprints",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Makefile",
+        "updated_at": "2025-05-13T07:14:58Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "dataplatform-status-api",
+        "description": "CRUD API for status på opplastede filer ",
+        "url": "https://github.com/oslokommune/dataplatform-status-api",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2025-02-12T06:33:47Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "bydelsfakta-api",
+        "description": "API for Bydelsfakta",
+        "url": "https://github.com/oslokommune/bydelsfakta-api",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2024-08-14T13:14:33Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-common-jvm",
+        "description": "Common JVM library for the Origo Dataplatform",
+        "url": "https://github.com/oslokommune/okdata-common-jvm",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Kotlin",
+        "updated_at": "2021-10-12T11:27:39Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "gjenbruksstasjoner-kotid-api",
+        "description": "Lambda function providing an API for Gjenbruksstasjoner Køtid Frontend, using Flask and Flask-RESTful.",
+        "url": "https://github.com/oslokommune/gjenbruksstasjoner-kotid-api",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2023-01-28T02:27:21Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "gjenbruksstasjoner-kotid-frontend",
+        "description": "Vue-app that shows information from gjenbruksstasjoner-queue-predictions-api",
+        "url": "https://github.com/oslokommune/gjenbruksstasjoner-kotid-frontend",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Vue",
+        "updated_at": "2023-01-28T02:27:22Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-event-collector",
+        "description": "Lambda functions to put a list of records on a Kinesis stream. Obsolete as of 2022-05-16.",
+        "url": "https://github.com/oslokommune/okdata-event-collector",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2023-01-28T00:47:05Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-data-exporter",
+        "description": "AWS Lambda function for generating a list of presigned S3 URLs from a dataset ID",
+        "url": "https://github.com/oslokommune/okdata-data-exporter",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2025-03-03T11:51:52Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "dataplatform-batch-jobs",
+        "description": "Collection of batch jobs for the dataplatform",
+        "url": "https://github.com/oslokommune/dataplatform-batch-jobs",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2023-01-11T14:28:39Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-state-machine-event",
+        "description": "Act on state machine events from CloudWatch. Migrated to https://github.com/oslokommune/dataplatform-status-api.",
+        "url": "https://github.com/oslokommune/okdata-state-machine-event",
+        "topics": [],
+        "language": "Python",
+        "updated_at": "2023-01-28T05:21:35Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-metadata-api",
+        "description": "API for posting, updating and retrieving metadata in the dataplatform",
+        "url": "https://github.com/oslokommune/okdata-metadata-api",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2025-05-16T11:07:19Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-event-data-subscription",
+        "description": "Subscription manager for events (WebSockets)",
+        "url": "https://github.com/oslokommune/okdata-event-data-subscription",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2023-01-28T00:38:28Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-permission-api",
+        "description": "API for managing permissions to okdata resources",
+        "url": "https://github.com/oslokommune/okdata-permission-api",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2025-05-13T07:03:12Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-data-uploader",
+        "description": "AWS Lambda function for generating presigned URLs and form fields used to upload files to S3",
+        "url": "https://github.com/oslokommune/okdata-data-uploader",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2025-02-12T06:41:14Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-elasticsearch-queries",
+        "description": "Proxy-thingy for Elasticsearch queries",
+        "url": "https://github.com/oslokommune/okdata-elasticsearch-queries",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2023-01-28T00:53:37Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-token-service",
+        "description": "REST API for generating user tokens with Keycloak",
+        "url": "https://github.com/oslokommune/okdata-token-service",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2025-02-12T08:13:01Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-event-stream-api",
+        "description": "REST API for creating and managing event streams and sending data to event streams. Obsolete as of 2022-05-20.",
+        "url": "https://github.com/oslokommune/okdata-event-stream-api",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2023-01-28T00:38:22Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-pipeline-jvm",
+        "description": "Collection of JVM pipeline components for Origo dataplattform",
+        "url": "https://github.com/oslokommune/okdata-pipeline-jvm",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Kotlin",
+        "updated_at": "2024-08-14T10:31:12Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-badetemperatur-api",
+        "description": "Lambda functions to collect and expose water temperatures in Oslo. This API is deprecated (2022-05-11).",
+        "url": "https://github.com/oslokommune/okdata-badetemperatur-api",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2023-01-28T00:54:02Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-maskinporten-api",
+        "description": "REST API for managing clients and keys in Maskinporten and synchronization with AWS SSM",
+        "url": "https://github.com/oslokommune/okdata-maskinporten-api",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2025-05-14T08:45:17Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "origo-teknologiradar",
+        "description": "A library that generates an interactive radar, inspired by http://thoughtworks.com/radar/",
+        "url": "https://github.com/oslokommune/origo-teknologiradar",
+        "topics": [],
+        "language": "CSS",
+        "updated_at": "2024-12-17T07:46:06Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "fastapi-demo",
+        "description": "FastAPI demo app. Migrated to https://github.com/oslokommune/serverless-blueprints",
+        "url": "https://github.com/oslokommune/fastapi-demo",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Makefile",
+        "updated_at": "2023-01-28T04:47:59Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-log-group-subscriber",
+        "description": "Auto-subscribe to CloudWatch Log Groups",
+        "url": "https://github.com/oslokommune/okdata-log-group-subscriber",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2025-05-13T07:14:37Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "origourls",
+        "description": "URL-shortener to give permanent human readable names to google meet ( or other stuff! )",
+        "url": "https://github.com/oslokommune/origourls",
+        "topics": [],
+        "language": "Go",
+        "updated_at": "2021-11-15T08:49:16Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      }
+    ],
+    "developer_relevant": [
+      {
+        "source": "github",
+        "name": "labs.oslo.kommune.no",
+        "description": "Origo labs Enonic XP application",
+        "url": "https://github.com/oslokommune/labs.oslo.kommune.no",
+        "topics": [],
+        "language": "JavaScript",
+        "updated_at": "2025-03-17T08:11:20Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "bydelsfakta",
+        "description": "Bydelsfakta is a frontend application for Oslo municipality which visualises demographic statistics and data on various topics for the 15 districts in the City of Oslo.",
+        "url": "https://github.com/oslokommune/bydelsfakta",
+        "topics": [
+          "bydelsfakta",
+          "d3",
+          "data-visualization",
+          "dataplatform",
+          "dataspeilet",
+          "visualises-demographic-statistics",
+          "vue"
+        ],
+        "language": "JavaScript",
+        "updated_at": "2025-05-13T07:00:14Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-cli",
+        "description": "Command line interface to the services provided by Oslo Origo's Dataplatform",
+        "url": "https://github.com/oslokommune/okdata-cli",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2025-05-16T10:54:00Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-sdk-python",
+        "description": "Python SDK for Origo Dataplatform",
+        "url": "https://github.com/oslokommune/okdata-sdk-python",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2025-02-12T08:38:01Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "origo-hackathon-tla-bot",
+        "description": "Simplest possible TLA (Three letter acronym/abbreviation) bot.",
+        "url": "https://github.com/oslokommune/origo-hackathon-tla-bot",
+        "topics": [],
+        "language": "JavaScript",
+        "updated_at": "2023-11-11T14:33:22Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "origo-testing-workshop",
+        "description": "Workshop om testing",
+        "url": "https://github.com/oslokommune/origo-testing-workshop",
+        "topics": [
+          "testing",
+          "workshop"
+        ],
+        "language": "JavaScript",
+        "updated_at": "2023-09-29T09:56:18Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "dataplatform-probe",
+        "description": "Monitoring service for dataplatform services and events ",
+        "url": "https://github.com/oslokommune/dataplatform-probe",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2025-03-04T07:25:40Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "dataplatform-prometheus",
+        "description": "Builds Prometheus bundled with our config for scraping of metrics. Migrated to https://github.com/oslokommune/dataplatform-config/tree/main/docker/prometheus",
+        "url": "https://github.com/oslokommune/dataplatform-prometheus",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Shell",
+        "updated_at": "2023-01-28T04:47:58Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "dataplatform-pipeline-alerts-email",
+        "description": "Sends alerts about failing pipelines as an email",
+        "url": "https://github.com/oslokommune/dataplatform-pipeline-alerts-email",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2025-02-18T13:52:52Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "helsedata-public",
+        "description": "Offentlig tilgjengelig informasjon for helsedata satsning",
+        "url": "https://github.com/oslokommune/helsedata-public",
+        "topics": [
+          "helsedata"
+        ],
+        "language": "HTML",
+        "updated_at": "2024-10-24T12:58:16Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-aws",
+        "description": "Collection of helpers for working with AWS Lambda",
+        "url": "https://github.com/oslokommune/okdata-aws",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2025-02-12T08:36:16Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-pipeline",
+        "description": "Collection of pipeline components for Origo Dataplattform",
+        "url": "https://github.com/oslokommune/okdata-pipeline",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2025-05-16T11:02:07Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-resource-auth",
+        "description": "Dataplatform resource authorizer",
+        "url": "https://github.com/oslokommune/okdata-resource-auth",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2022-08-18T11:38:41Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "serverless-blueprints",
+        "description": "Blueprints that can be used as starting points for Serverless applications in Oslo Origo",
+        "url": "https://github.com/oslokommune/serverless-blueprints",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Makefile",
+        "updated_at": "2025-05-13T07:14:58Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "dataplatform-status-api",
+        "description": "CRUD API for status på opplastede filer ",
+        "url": "https://github.com/oslokommune/dataplatform-status-api",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2025-02-12T06:33:47Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "bydelsfakta-api",
+        "description": "API for Bydelsfakta",
+        "url": "https://github.com/oslokommune/bydelsfakta-api",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2024-08-14T13:14:33Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-common-jvm",
+        "description": "Common JVM library for the Origo Dataplatform",
+        "url": "https://github.com/oslokommune/okdata-common-jvm",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Kotlin",
+        "updated_at": "2021-10-12T11:27:39Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "gjenbruksstasjoner-kotid-api",
+        "description": "Lambda function providing an API for Gjenbruksstasjoner Køtid Frontend, using Flask and Flask-RESTful.",
+        "url": "https://github.com/oslokommune/gjenbruksstasjoner-kotid-api",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2023-01-28T02:27:21Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "gjenbruksstasjoner-kotid-frontend",
+        "description": "Vue-app that shows information from gjenbruksstasjoner-queue-predictions-api",
+        "url": "https://github.com/oslokommune/gjenbruksstasjoner-kotid-frontend",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Vue",
+        "updated_at": "2023-01-28T02:27:22Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-event-collector",
+        "description": "Lambda functions to put a list of records on a Kinesis stream. Obsolete as of 2022-05-16.",
+        "url": "https://github.com/oslokommune/okdata-event-collector",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2023-01-28T00:47:05Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-data-exporter",
+        "description": "AWS Lambda function for generating a list of presigned S3 URLs from a dataset ID",
+        "url": "https://github.com/oslokommune/okdata-data-exporter",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2025-03-03T11:51:52Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "dataplatform-batch-jobs",
+        "description": "Collection of batch jobs for the dataplatform",
+        "url": "https://github.com/oslokommune/dataplatform-batch-jobs",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2023-01-11T14:28:39Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-state-machine-event",
+        "description": "Act on state machine events from CloudWatch. Migrated to https://github.com/oslokommune/dataplatform-status-api.",
+        "url": "https://github.com/oslokommune/okdata-state-machine-event",
+        "topics": [],
+        "language": "Python",
+        "updated_at": "2023-01-28T05:21:35Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-metadata-api",
+        "description": "API for posting, updating and retrieving metadata in the dataplatform",
+        "url": "https://github.com/oslokommune/okdata-metadata-api",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2025-05-16T11:07:19Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-event-data-subscription",
+        "description": "Subscription manager for events (WebSockets)",
+        "url": "https://github.com/oslokommune/okdata-event-data-subscription",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2023-01-28T00:38:28Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-permission-api",
+        "description": "API for managing permissions to okdata resources",
+        "url": "https://github.com/oslokommune/okdata-permission-api",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2025-05-13T07:03:12Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-data-uploader",
+        "description": "AWS Lambda function for generating presigned URLs and form fields used to upload files to S3",
+        "url": "https://github.com/oslokommune/okdata-data-uploader",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2025-02-12T06:41:14Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-elasticsearch-queries",
+        "description": "Proxy-thingy for Elasticsearch queries",
+        "url": "https://github.com/oslokommune/okdata-elasticsearch-queries",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2023-01-28T00:53:37Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-token-service",
+        "description": "REST API for generating user tokens with Keycloak",
+        "url": "https://github.com/oslokommune/okdata-token-service",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2025-02-12T08:13:01Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-event-stream-api",
+        "description": "REST API for creating and managing event streams and sending data to event streams. Obsolete as of 2022-05-20.",
+        "url": "https://github.com/oslokommune/okdata-event-stream-api",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2023-01-28T00:38:22Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-pipeline-jvm",
+        "description": "Collection of JVM pipeline components for Origo dataplattform",
+        "url": "https://github.com/oslokommune/okdata-pipeline-jvm",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Kotlin",
+        "updated_at": "2024-08-14T10:31:12Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-badetemperatur-api",
+        "description": "Lambda functions to collect and expose water temperatures in Oslo. This API is deprecated (2022-05-11).",
+        "url": "https://github.com/oslokommune/okdata-badetemperatur-api",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2023-01-28T00:54:02Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-maskinporten-api",
+        "description": "REST API for managing clients and keys in Maskinporten and synchronization with AWS SSM",
+        "url": "https://github.com/oslokommune/okdata-maskinporten-api",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2025-05-14T08:45:17Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "origo-teknologiradar",
+        "description": "A library that generates an interactive radar, inspired by http://thoughtworks.com/radar/",
+        "url": "https://github.com/oslokommune/origo-teknologiradar",
+        "topics": [],
+        "language": "CSS",
+        "updated_at": "2024-12-17T07:46:06Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "fastapi-demo",
+        "description": "FastAPI demo app. Migrated to https://github.com/oslokommune/serverless-blueprints",
+        "url": "https://github.com/oslokommune/fastapi-demo",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Makefile",
+        "updated_at": "2023-01-28T04:47:59Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "okdata-log-group-subscriber",
+        "description": "Auto-subscribe to CloudWatch Log Groups",
+        "url": "https://github.com/oslokommune/okdata-log-group-subscriber",
+        "topics": [
+          "dataplatform"
+        ],
+        "language": "Python",
+        "updated_at": "2025-05-13T07:14:37Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      },
+      {
+        "source": "github",
+        "name": "origourls",
+        "description": "URL-shortener to give permanent human readable names to google meet ( or other stuff! )",
+        "url": "https://github.com/oslokommune/origourls",
+        "topics": [],
+        "language": "Go",
+        "updated_at": "2021-11-15T08:49:16Z",
+        "developer_relevant": true,
+        "relevance_categories": []
+      }
+    ],
+    "sdk_status": {
+      "sdk_installed": true,
+      "version": "unknown",
+      "config_valid": true,
+      "authentication_needed": true,
+      "contact": "dataplattform@oslo.kommune.no"
+    }
+  },
+  "pbe_systems": {
+    "planinnsyn": {
+      "base_url": "https://od2.pbe.oslo.kommune.no",
+      "system_name": "planinnsyn",
+      "accessible": true,
+      "api_endpoints": [
+        "/data"
+      ],
+      "data_formats": [],
+      "search_capabilities": [],
+      "developer_features": []
+    },
+    "byggesak": {
+      "base_url": "https://innsyn.pbe.oslo.kommune.no",
+      "system_name": "byggesak",
+      "accessible": true,
+      "api_endpoints": [],
+      "data_formats": [],
+      "search_capabilities": [],
+      "developer_features": []
+    },
+    "eiendomsinfo": {
+      "base_url": "https://eiendom.oslo.kommune.no",
+      "system_name": "eiendomsinfo",
+      "accessible": false,
+      "api_endpoints": [],
+      "data_formats": [],
+      "search_capabilities": [],
+      "developer_features": [],
+      "error": "HTTPSConnectionPool(host='eiendom.oslo.kommune.no', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1032f20d0>: Failed to resolve 'eiendom.oslo.kommune.no' ([Errno 8] nodename nor servname provided, or not known)\"))"
+    },
+    "kart": {
+      "base_url": "https://kart.oslo.kommune.no",
+      "system_name": "kart",
+      "accessible": false,
+      "api_endpoints": [],
+      "data_formats": [],
+      "search_capabilities": [],
+      "developer_features": [],
+      "error": "HTTPSConnectionPool(host='kart.oslo.kommune.no', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1032f34d0>, 'Connection to kart.oslo.kommune.no timed out. (connect timeout=15)'))"
+    },
+    "tomteutleie": {
+      "base_url": "https://tomteutleie.oslo.kommune.no",
+      "system_name": "tomteutleie",
+      "accessible": false,
+      "api_endpoints": [],
+      "data_formats": [],
+      "search_capabilities": [],
+      "developer_features": [],
+      "error": "HTTPSConnectionPool(host='tomteutleie.oslo.kommune.no', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1032f3610>: Failed to resolve 'tomteutleie.oslo.kommune.no' ([Errno 8] nodename nor servname provided, or not known)\"))"
+    },
+    "building_permits_deep": {
+      "system_url": "https://innsyn.pbe.oslo.kommune.no",
+      "data_types": [],
+      "search_methods": [],
+      "export_formats": [],
+      "api_possibilities": []
+    }
+  },
+  "legal_regulatory": {
+    "planning_regulations": {
+      "kommuneplan": [],
+      "reguleringsplaner": [],
+      "temaplaner": [],
+      "veiledninger": []
+    },
+    "building_regulations": {
+      "forskrifter": [],
+      "standarder": [],
+      "krav": [],
+      "veiledninger": []
+    },
+    "technical_requirements": {
+      "vann_avlop": [],
+      "energi": [],
+      "transport": [],
+      "bredband": [],
+      "avfall": [],
+      "sources": [
+        "Teknisk reglement for vann og avløp",
+        "Energikrav og energimerking",
+        "Parkeringsnormer",
+        "Bredbandsutbygging krav",
+        "Avfallshåndtering krav"
+      ]
+    },
+    "fees_charges": {
+      "byggesak_gebyrer": [],
+      "infrastruktur_avgifter": [],
+      "kommunale_avgifter": [],
+      "dokumenter": [],
+      "categories": [
+        "Saksbehandlingsgebyr",
+        "Utbyggingsavtaler",
+        "Infrastrukturavgift",
+        "Kommunale avgifter"
+      ]
+    }
+  },
+  "contacts": [
+    {
+      "department": "Plan- og bygningsetaten (PBE)",
+      "email": "postmottak.pbe@oslo.kommune.no",
+      "phone": "02180",
+      "areas": [
+        "byggetillatelser",
+        "reguleringsplaner",
+        "planbehandling"
+      ]
+    },
+    {
+      "department": "Origo Dataplatform",
+      "email": "dataplattform@oslo.kommune.no",
+      "areas": [
+        "api_tilgang",
+        "datasett",
+        "teknisk_support"
+      ]
+    },
+    {
+      "department": "Eiendoms- og byfornyelsesetaten (EBY)",
+      "email": "postmottak.eby@oslo.kommune.no",
+      "areas": [
+        "tomteutleie",
+        "eiendomsutvikling",
+        "utbyggingsavtaler"
+      ]
+    },
+    {
+      "department": "Vann- og avløpsetaten (VAV)",
+      "email": "postmottak.vav@oslo.kommune.no",
+      "areas": [
+        "vann_avlop",
+        "infrastruktur",
+        "tekniske_krav"
+      ]
+    }
+  ],
+  "developer_recommendations": [
+    "Start med å etablere kontakt med dataplattform@oslo.kommune.no for Origo-tilgang",
+    "Få oversikt over gjeldende reguleringsplaner i ditt område via planinnsyn",
+    "Undersøk byggesaksarkivet for lignende prosjekter i området",
+    "Kontakt PBE for forhåndskonferanse og avklaring av krav",
+    "Sjekk infrastrukturavgifter og gebyrer tidlig i prosessen",
+    "Vurder utbyggingsavtaler og tekniske krav for området",
+    "Få tilgang til eiendomsdata og matrikkeldata",
+    "Undersøk temaplaner som kan påvirke prosjektet"
+  ],
+  "next_actions": [
+    {
+      "priority": 1,
+      "action": "Etabler Origo API-tilgang",
+      "contact": "dataplattform@oslo.kommune.no",
+      "expected_outcome": "Tilgang til alle Oslo datasett"
+    },
+    {
+      "priority": 2,
+      "action": "Kartlegg PBE API-muligheter",
+      "contact": "postmottak.pbe@oslo.kommune.no",
+      "expected_outcome": "Direktetilgang til byggesaksdata"
+    },
+    {
+      "priority": 3,
+      "action": "Få fullstendig oversikt over avgifter",
+      "method": "Forhåndskonferanse med PBE",
+      "expected_outcome": "Komplett kostnadsgrunnlag"
+    }
+  ],
+  "completeness_assessment": {
+    "origo_platform": "80% - SDK installert, trenger autentisering",
+    "pbe_systems": "60% - Hovedsystemer kartlagt, trenger API-dokumentasjon",
+    "legal_framework": "70% - Hovedkategorier identifisert, trenger detaljering",
+    "overall_completeness": "70%",
+    "missing_elements": [
+      "Direkte API-dokumentasjon fra Oslo",
+      "Komplette gebyrstrukturer",
+      "Tekniske standarder og krav",
+      "Integrerte dataflyter mellom systemer"
+    ]
+  }
+}
